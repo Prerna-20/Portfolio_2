@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(38, 38, 39);
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.wrapperHome {
+    background: rgb(51, 50, 50) url(../img/Website-Design-Background-1.jpg) no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.slide {
+    animation: slideRight 3s cubic-bezier(.72, 0, 0.175, 1) 1 normal forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100vw); // width: 0%;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px); // width: 100%;
+        opacity: 1;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.slideDown {
+    animation: slideDown 1.5s ease-in 1s 1 normal forwards;
+}
+
+.home {
+    width: 100px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.details>.link:hover {
+    text-decoration: line-through;
+}
+
+.introContainer {
+    margin: 50px 100px;
+    width: 85%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 14%;
+}
+
+.intro {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.slideUp {
+    animation: slideUp 1.5s ease-in 1s 1 normal forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.quote {
+    font-size: 5vmax;
+    width: 50%;
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 10px;
+    line-height: 150%;
+}
+
+.hello {
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Arapey', serif;
+}
+
+.projectLink {
+    text-align: right;
+    margin: 0;
+    font-size: 12px;
+}
+
+.footer {
+    font-weight: bold;
+}
+
+.socialMedia {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 0;
+}
+
+.warning {
+    font-family: 'Arapey', serif;
+    color: rgb(90, 89, 89);
+    float: right;
+}
+
+/*
+font-family: 'Coiny', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Spicy Rice', cursive;
+font-family: 'Arvo', serif;
+font-family: 'Source Code Pro', monospace;
+//font-family: 'Aleo', serif;
+//font-family: 'Acme', sans-serif;
+*/
