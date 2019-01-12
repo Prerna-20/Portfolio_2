@@ -18,9 +18,9 @@ body {
 .wrapperHome {
     background: rgb(51, 50, 50) url(../img/Website-Design-Background-1.jpg) no-repeat;
     background-size: 100% 100vh;
-    height: 100vh;
     position: fixed;
     width: 100%;
+    overflow: hidden;
     margin: 0 auto;
     height: 100%;
     padding: 0 50px;
@@ -32,11 +32,11 @@ body {
 
 @keyframes slideRight {
     0% {
-        transform: translateX(-100vw); // width: 0%;
+        transform: translateX(-100vw); 
         opacity: 0;
     }
     100% {
-        transform: translateX(0px); // width: 100%;
+        transform: translateX(0px);
         opacity: 1;
     }
 }
@@ -77,59 +77,63 @@ body {
     text-decoration: line-through;
 }
 
-.introContainer {
-    margin: 50px 100px;
-    width: 85%;
-    height: 50%;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 14%;
-}
-
 .intro {
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    height: 100%;
-    transform: translateY(100%);
-}
-
-.slideUp {
-    animation: slideUp 1.5s ease-in 1s 1 normal forwards;
+    margin: 0px 100px;
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    top: 20%;
+    left: 5%;
 }
 
 @keyframes slideUp {
     0% {
-        transform: translateY(100%);
+        transform: translateY(50%);
+        opacity: 0;
     }
     100% {
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 
 .quote {
-    font-size: 5vmax;
+    font-size: 12vmin;
     width: 50%;
     font-family: 'Exo', sans-serif;
     margin: 0;
     padding: 10px;
-    line-height: 150%;
+    line-height: 12vmin;
+    opacity: 0;
+    transform: translateY(50%);
 }
 
 .hello {
     margin: 0;
     letter-spacing: 1px;
     font-family: 'Arapey', serif;
+    font-size: 2.5vmin;
+    opacity: 0;
+    transform: translateY(50%);
 }
 
 .projectLink {
     text-align: right;
     margin: 0;
     font-size: 12px;
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+.slideUp {
+    animation: slideUp 1.5s ease-in 1s 1 normal forwards;
 }
 
 .footer {
     font-weight: bold;
+    position: absolute;
+    width: 90%;
+    bottom: 8px;
 }
 
 .socialMedia {
@@ -143,16 +147,9 @@ body {
 
 .warning {
     font-family: 'Arapey', serif;
-    color: rgb(90, 89, 89);
-    float: right;
+    color: rgb(156, 156, 156);
+    text-align: right;
+    display: block;
+    letter-spacing: 2px;
+    padding: 5px;
 }
-
-/*
-font-family: 'Coiny', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Spicy Rice', cursive;
-font-family: 'Arvo', serif;
-font-family: 'Source Code Pro', monospace;
-//font-family: 'Aleo', serif;
-//font-family: 'Acme', sans-serif;
-*/
